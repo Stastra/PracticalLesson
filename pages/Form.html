@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<title>Форма</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1>Codifun Inspire Me</h1>
+		<p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus praesentium veritatis, voluptatum esse
+				illum nisi, consectetur minus debitis ex, corporis porro laborum ipsa voluptatem assumenda voluptate. Ipsa
+				ducimus mollitia nesciunt.</i></p>
+	</header>
+
+	<nav class="nav">
+		<a href="../index.html">Головна сторінка</a>
+		<a href="interesting_facts.html">Цікаві факти</a>
+		<a href="address.html">Адреса</a>
+		<a href="Form.html">Заповніть форму</a>
+	</nav>
+
+	<section>
+		<h2 class="article-title">Форма з особистими даними &#x2663;</h2>
+
+		<canvas id="myCanvas" width="300px" height="80px"></canvas>
+
+
+		<div class="btn_container">
+			<h4>Натиснить щоб повернутися</h4>
+			<a href="../index.html">
+				<svg width='50px' height="50px">
+					<circle cx="25" cy="25" r="21" stroke="green" stroke-width="4" fill="greenyellow" />
+				</svg>
+			</a>
+		</div>
+
+		<form name="user" action="example.com" method="POST">
+
+			<div class="form">
+				<label for="First_name">Ім'я:</label><br />
+				<input type="text" name="First_name" id="First_name" placeholder="Введіть Ваше ім'я" required>
+			</div>
+
+			<div class="form">
+				<label for="Last_name">Прізвище:</label><br />
+				<input type="text" name="Last_name" id="Last_name" placeholder="Введіть Ваше Прізвище" required>
+			</div>
+
+			<div class="form">
+				<label for="date">Дата народження:</label>
+				<input type="date" name="date" id="date" required>
+			</div>
+
+			<div class="form">
+				<label for="education">Країна походження:</label>
+				<select name="education" id="education">
+					<option value="Ukraine">Україна</option>
+					<option value="Romania">Румунія</option>
+					<option value="Moldova">Молдова</option>
+					<option value="other">Інше</option>
+				</select>
+			</div>
+
+			<div class="form">
+				<label for="HTML">Інтереси:</label><br />
+				<input type="checkbox" name="HTML" id="HTML" value="HTML"><label for="HTML">HTML</label><br />
+				<input type="checkbox" name="Javascript" id="Javascript" value="Javascript"><label
+					for="Javascript">Javascript</label><br />
+				<input type="checkbox" name="PHP" id="PHP" value="PHP"><label for="PHP">PHP</label><br />
+				<input type="checkbox" name="CSS" id="CSS" value="CSS"><label for="CSS">CSS</label><br />
+			</div>
+
+			<div class="form">
+				<label for="email">E-mail:</label>
+				<input type="email" name="email" id="email" placeholder="E-mail" required>
+			</div>
+
+			<div class="form">
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" placeholder="Password" required>
+			</div>
+
+			<div class="form">
+				<label for="daily">Як часто бажаєте отримувати повідомлення на електронну пошту</label><br />
+				<input type="radio" name="message" value="daily" id="daily" required><label
+					for="daily">Щонеділі</label><br />
+				<input type="radio" name="message" value="monthly" id="monthly" required><label
+					for="monthly">Щомісячно</label><br />
+				<input type="radio" name="message" value="never" id="never" required><label for="never">Ніколи</label><br />
+			</div>
+
+			<div class="form">
+				<label for="Codifun">Ваша думка про Codifun:</label><br />
+				<textarea id="Codifun" rows="8" cols="50"></textarea>
+			</div>
+
+			<div class="form">
+				<button type="reset">Очистити форму</button>
+				<button type="submit">Відправити дані</button>
+			</div>
+
+		</form>
+	</section>
+
+	<footer class="footer">
+		<h3 id="demo" class="color"></h3>
+	</footer>
+	<script type="text/javascript" src="../JS/script.js"></script>
+
+	<script>
+		let c = document.getElementById('myCanvas');
+		let ctx = c.getContext('2d');
+		ctx.font = "25px Arial";
+		ctx.fillText('Hello World', 75, 45);
+	</script>
+</body>
+
+</html>
